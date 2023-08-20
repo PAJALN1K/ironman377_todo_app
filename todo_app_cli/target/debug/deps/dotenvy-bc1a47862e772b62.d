@@ -1,0 +1,11 @@
+C:\Users\sprin\Документы\Программирование\Summer Practice MTUCI 2023\todo_app_cli\target\debug\deps\dotenvy-bc1a47862e772b62.rmeta: C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\lib.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\errors.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\find.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\iter.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\parse.rs
+
+C:\Users\sprin\Документы\Программирование\Summer Practice MTUCI 2023\todo_app_cli\target\debug\deps\libdotenvy-bc1a47862e772b62.rlib: C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\lib.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\errors.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\find.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\iter.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\parse.rs
+
+C:\Users\sprin\Документы\Программирование\Summer Practice MTUCI 2023\todo_app_cli\target\debug\deps\dotenvy-bc1a47862e772b62.d: C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\lib.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\errors.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\find.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\iter.rs C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\parse.rs
+
+C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\lib.rs:
+C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\errors.rs:
+C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\find.rs:
+C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\iter.rs:
+C:\Users\sprin\.cargo\registry\src\index.crates.io-6f17d22bba15001f\dotenvy-0.15.7\src\parse.rs:
