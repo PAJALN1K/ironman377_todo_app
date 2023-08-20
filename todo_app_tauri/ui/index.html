@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>todo_app</title>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta name="language" content="RU">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container main-container">
+            <div class="container pseudo-footer">
+                <div class="container main-line">
+                    <div class="task-list-display">
+                        <div class="task-list-image">
+                            <img src="img/folder_white.png" alt="иконка всех задач" width="30">
+                        </div>
+                        <div class="task-list-desc">
+                            <h1>Список задач (полный)</h1>
+                        </div>
+                    </div>
+                    <div class="sort-button">
+                        <img src="img/sort_white_undone.png" alt="иконка сортировки" width="45">
+                    </div>
+                </div>
+                <div class="container task-creation-line">
+                    <div class="line-itself">
+                        <form action="" method="get">
+                            <input 
+                                type="text" 
+                                name="new-task-desc" 
+                                id="task-desc" 
+                                placeholder="+ Добавьте задачу в список, нажмите Enter для продолжения"
+                                class="task-creation"
+                            >
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container task-list">
+                <!-- Example of task div -->
+                <!-- <div class="task" id="task-10002">
+                    <div class="task-part part-1">
+                        <button class="task-completion-square"><img src="img/square_grey_unfinished.png" width="20"></button>
+                        <p class="task-desc">Сходить к окулисту </p>
+                    </div>
+                    <div class="task-part part-2">
+                        <p class="lifesphere-label noselect">Здоровье</p>
+                        <button class="task-deletion"><img src="img/delete_white.png" width="27"></button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div id="contextMenu" class="context-menu" style="display: none">
+            <ul>
+                <li><a id="mark_as_completed" href="#">Выполнено</a></li>
+                <li><a href="#">Не будет выполнено</a></li>
+                <li><a href="#">Еще не выполнено</a></li>
+                <li><a href="#">Удалить задачу</a></li>
+                <li><a href="#">Изменить текст задачи</a></li>
+                <li><a href="#">Изменить сферу жизни задачи</a></li>
+                <li><a href="#">Изменить приоритет задачи</a></li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
