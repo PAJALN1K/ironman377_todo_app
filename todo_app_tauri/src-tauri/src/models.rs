@@ -2,6 +2,7 @@ pub use crate::schema::*;
 
 use diesel::prelude::*;
 
+#[derive(Debug)]
 #[derive(serde::Serialize)]
 #[derive(Queryable, Selectable)]
 #[diesel(table_name = crate::schema::tasks)]

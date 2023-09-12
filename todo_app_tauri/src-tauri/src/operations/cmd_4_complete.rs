@@ -11,5 +11,5 @@ pub fn mark_as_completed(task_id: i32) {
         .set(state.eq("Completed"))
         .returning(TaskDB::as_returning())
         .get_result(conn)
-        .unwrap();
+        .unwrap(); // 12 (db)
 }

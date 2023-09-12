@@ -11,5 +11,5 @@ pub fn mark_as_rejected(task_id: i32) {
         .set(state.eq("Rejected"))
         .returning(TaskDB::as_returning())
         .get_result(conn)
-        .unwrap();
+        .unwrap(); // 14 (db)
 }

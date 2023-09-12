@@ -8,6 +8,6 @@ pub fn delete_task(task_id: i32) {
     
     diesel::delete(tasks.find(task_id))
         .execute(conn)
-        .expect("Error  deleting tasks");
+        .expect("Error deleting tasks"); // 10 (db)
 }
 

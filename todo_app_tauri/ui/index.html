@@ -21,12 +21,12 @@
                         </div>
                     </div>
                     <div class="sort-button">
-                        <img src="img/sort_white_undone.png" alt="иконка сортировки" width="45">
+                        <input type="image" class="task-sort" width="45" src="img/sort_white.png">
                     </div>
                 </div>
                 <div class="container task-creation-line">
                     <div class="line-itself">
-                        <form action="" method="get">
+                        <form action="" method="get" autocomplete="off">
                             <input 
                                 type="text" 
                                 name="new-task-desc" 
@@ -42,25 +42,38 @@
                 <!-- Example of task div -->
                 <!-- <div class="task" id="task-10002">
                     <div class="task-part part-1">
-                        <button class="task-completion-square"><img src="img/square_grey_unfinished.png" width="20"></button>
-                        <p class="task-desc">Сходить к окулисту </p>
+                        <input class="task-completion-square unfinished" type="image" src="img/square_grey_unfinished.png" width="20">
+                        <input class="task-desc" type="text" value="Сходить к окулисту">
                     </div>
                     <div class="task-part part-2">
-                        <p class="lifesphere-label noselect">Здоровье</p>
-                        <button class="task-deletion"><img src="img/delete_white.png" width="27"></button>
+                        <input class="lifesphere-label" type="text" value="Здоровье">
+                        <input type="image" src="img/delete_white.png" width="27" class="task-deletion">
                     </div>
                 </div> -->
             </div>
         </div>
-        <div id="contextMenu" class="context-menu" style="display: none">
+        <div id="task-completion-menu" class="context-menu" style="display: none">
             <ul>
-                <li><a id="mark_as_completed" href="#">Выполнено</a></li>
-                <li><a href="#">Не будет выполнено</a></li>
-                <li><a href="#">Еще не выполнено</a></li>
-                <li><a href="#">Удалить задачу</a></li>
-                <li><a href="#">Изменить текст задачи</a></li>
-                <li><a href="#">Изменить сферу жизни задачи</a></li>
-                <li><a href="#">Изменить приоритет задачи</a></li>
+                <li><input type="button" id="mark_as_completed" value="Выполнено"></li>
+                <li><input type="button" id="mark_as_rejected" value="Не будет выполнено"></li>
+                <li><input type="button" id="mark_as_unfinished" value="Еще не выполнено"></li>
+            </ul>
+        </div>
+        <div id="task-importance-menu" class="context-menu" style="display: none">
+            <ul>
+                <li><input type="button" class="mark_importance" id="high" value="Высокий приоритет"></li>
+                <li><input type="button" class="mark_importance" id="medium" value="Средний приоритет"></li>
+                <li><input type="button" class="mark_importance" id="low" value="Низкий приоритет"></li>
+                <li><input type="button" class="mark_importance" id="unmarked" value="Без приоритета"></li>
+            </ul>
+        </div>
+        <div id="task-sort-menu" class="context-menu" style="display: none">
+            <ul>
+                <li><input type="button" class="cm-sort-button" id="sort-cm-none" value="Нет"></li>
+                <li><input type="button" class="cm-sort-button" id="sort-cm-name" value="Название"></li>
+                <li><input type="button" class="cm-sort-button" id="sort-cm-importance" value="Приоритет"></li>
+                <li><input type="button" class="cm-sort-button" id="sort-cm-lifesphere" value="Сфера жизни"></li>
+                <li><input type="button" class="cm-sort-button" id="sort-cm-state" value="Завершенность"></li>
             </ul>
         </div>
         <script src="script.js"></script>

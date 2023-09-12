@@ -13,7 +13,7 @@ pub fn establish_connection() -> PgConnection {
 
     let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set"); 
     PgConnection::establish(&database_url)
-        .unwrap_or_else(|_| panic!("Error connecting to {}", database_url))  
+        .unwrap_or_else(|_| panic!("Error connecting to {}", database_url))  // 16 (db)
 }
 
 pub fn create_task(connection: &mut PgConnection, task_name: &str) -> TaskDB {
@@ -28,5 +28,5 @@ pub fn create_task(connection: &mut PgConnection, task_name: &str) -> TaskDB {
         .values(&new_task)
         .returning(TaskDB::as_returning())
         .get_result(connection)
-        .expect("Error saving a new task")      
+        .expect("Error saving a new task") // 17 (db)
 }

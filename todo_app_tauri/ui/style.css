@@ -1,5 +1,5 @@
 /* Общие теги */
-body {
+body{
     background-color: #222831;
     color: #EEEEEE;
     
@@ -25,24 +25,20 @@ img {
     pointer-events: none; 
 }
 
-button {
-    background-color: #222831;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.task-deletion:hover, .task-completion-square:hover, .task-sort:hover {
+    opacity: 33%;
 }
 
 
 
-.noselect {
+/* .noselect {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}
+} */
 
 
 /* Основные контейнеры */
@@ -83,6 +79,7 @@ button {
 
     position: sticky;
     top: 0px;
+    margin-bottom: 10px;
 }
 
 
@@ -131,7 +128,7 @@ button {
     box-sizing: border-box;
     width: 94%;
 
-    color: #606060;
+    color: #EEEEEE;
     font-size: 16px;
     vertical-align: middle;
 
@@ -152,7 +149,6 @@ button {
 
 /* Список задач */
 .task-list {
-    box-sizing: border-box;
     height: 99%;
     width: 100%;
 
@@ -160,8 +156,6 @@ button {
 
     display: flex;
     flex-direction: column;
-
-    /* border: 1px solid #f2e9e4; */
 }
 
 .task {
@@ -196,15 +190,31 @@ button {
     align-items: center;
 }
 
+.part-1 {
+    width: 70%;
+}
+
 .part-2 {
     width: 30%;
-    
     display: flex;
     justify-content: space-between;
 }
 
 .task-desc {
     padding-left: 10px;
+
+    border: none;
+    background-color: #222831;
+    font-size: 16px;
+    color: #EEEEEE;
+    font-family: 'Montserrat';
+
+    width: 100%;
+}
+
+
+.task-desc:focus, .lifesphere-label:focus {
+    outline: none;
 }
 
 .lifesphere-label {
@@ -221,6 +231,7 @@ button {
 
     background-color: #00ADB5;
     border-radius: 25px;
+    border: none;
 
     text-align: start;
     font-size: 13px;
@@ -241,33 +252,42 @@ button {
     height: 20px;
 }
 
-/* внешний вид меню */
-.context-menu {
-	/* настройки шрифта */
-	font-family: sans-serif;
-	/* устанавливаем абсолютное позиционирование */
-  position: absolute; 
-  /* не показываем меню с самого начала */
-  display: none; 
-  /* цвет фона и настройки рамки вокруг меню */
-  background-color: #fff; 
-  border: 1px solid #333; 
-  padding: 5px;
 
-  /* Добавим тени */
-  -moz-box-shadow: 5px 2px 10px rgba(0,0,0,0.5); 
-  -webkit-box-shadow: 5px 2px 10px rgba(0,0,0,0.5); 
-  box-shadow: 5px 2px 10px rgba(0,0,0,0.5); 
+
+.context-menu {
+    position: absolute;
+    
+    background-color: #393E46;
+    border: 1px solid #222831;
+    border-radius: 5px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-/* общий стиль для списка */
-.context-menu ul { list-style: none; margin: 0; padding: 0; }
 
-/* стиль отдельных элементов */
-.context-menu ul li { margin: 0; padding: 0; background-color: #fff; display: block; }
+.context-menu ul {
+    padding: 0px;
+    margin: 0px;
+    min-width: 150px;
+    list-style: none;
+}
 
-/* стиль ссылок в меню */
-.context-menu ul li a { color: #333; text-decoration: none; font-size: 12px; display: block; padding: 5px; }
+.context-menu ul li input {
+    background-color: #393E46;
+    text-align: start;
+    
+    min-width: 150px;
+    height: 100%;
 
-/* меняем фон в пункте меню при наведении мыши */
-.context-menu ul li a:hover { background-color: #eee; }
+    padding-bottom: 7px;
+    padding-top: 7px;
+    
+    border: none;
+    
+    color: #EEEEEE;
+}
+
+.context-menu ul li input:hover {
+    background-color: #52616b;
+}
